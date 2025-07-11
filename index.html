@@ -1,39 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brayan | Systems Engineer</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+
+<body class="fondo">
+
     <header>
         <nav>
-            <h1>brayan samchez</h1>
             <ul>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobreMi">Sobre mi</a></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#tecnologiasHerramientas">Tecnologias & Herramientas</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>hola, soy brayan</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas temporibus tenetur illum! Quo dolores sint laudantium excepturi quas, neque assumenda voluptatibus et dolore blanditiis ad architecto minus libero officia odio!</p>
+
+    <section id="inicio" class="sectionInicio">
+        <h1>Brayan Sanchez</h1>
+        <h2>Ingeniero en Sistemas</h2>
+        <p>💼 Profesional en tecnología con sólida formación en ingeniería de sistemas y enfoque en la solución de
+            problemas complejos</p>
     </section>
-    
-    <section id="sobreMi">
-        <h2>sobre mi</h2>
+
+    <section id="sobreMi" class="sectionSobreMi">
+        <div>
+            <p>👨‍💻 Soy estudiante de Ingeniería en Sistemas de Pereira, Colombia, con 1 año de experiencia en
+                desarrollo de software. 💻 He participado en proyectos enfocados en aplicaciones web y soluciones
+                empresariales, destacándome por mi enfoque en la eficiencia ⚙️, la calidad del código 🧠 y el trabajo en
+                equipo 🤝. Apasionado por la tecnología, busco siempre aportar lo mejor en cada desafío 🚀.</p>
+        </div>
+
+    </section>
+
+    <section id="tecnologiasHerramientas" class="tecnologiasHerramientas">
+        <h2>Tecnologias & herramientas</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>C++</li>
+            <li>JAVA</li>
+            <li>GIT</li>
+            <li>PHP</li>
+        </ul>
+    </section>
+
+    <section id="proyectos" class="sectionProyecto">
+        <h2>Proyectos</h2>
+        <div class="contenedorProyecto">
+                <div class="Proyecto">
+                    <img src="img/imagen1.png" alt="">
+                    <h3>Proyecto 1</h3>
+                    <p>proyecto en java con spring boot</p>
+                </div>
+                <div class="Proyecto">
+                    <img src="img/imagen1.png" alt="">
+                    <h3>Proyecto 1</h3>
+                    <p>proyecto en java con spring boot</p>
+                </div>   
+                <div class="Proyecto">
+                    <img src="img/imagen1.png" alt="">
+                    <h3>Proyecto 1</h3>
+                    <p>proyecto en java con spring boot</p>
+                </div>   
+                <div class="Proyecto">
+                    <img src="img/imagen1.png" alt="">
+                    <h3>Proyecto 1</h3>
+                    <p>proyecto en java con spring boot</p>
+                </div>
+                            
+        </div>
+        
+        
+    </section>
+
+
+    <section id="contacto" class="c">
+
+        <div class="sectionContacto">
+            <form action="mailto:brayan54sd@gmail.com" method="post" enctype="text/plain">
+                <h2>Contacto</h2>
+
+                <input placeholder="Nombre" type="text" name="nombre" id="Nombre" required>
+                <br>
+
+                <input placeholder="Email" type="text" name="email" id="email" required>
+                <br>
+
+                <textarea placeholder="Mensaje" name="mensaje" id="mensaje" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+
     </section>
 
     <footer>
-        <p>&copy; 2025 Brayan sanchez - Todos los derechos reservados</p>
+        <p>&copy; 2025 Brayan sanchez</p>
         <div>
             <a href="https://github.com/VRDARK33">GitHub</a> |
             <a href="">LinkedIn</a>
         </div>
     </footer>
 </body>
+
 </html>

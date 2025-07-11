@@ -1,0 +1,343 @@
+/* ------------------ */
+/* 🎨 ESTILOS GLOBALES */
+/* ------------------ */
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0a0a0a, #0f0f0f, #1a1a1a);
+    color: #f1f1f1;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Patrón de fondo cuadriculado */
+.fondo {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+}
+
+/* ------------------ */
+/* 🔝 HEADER           */
+/* ------------------ */
+header {
+    place-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0a331d;
+    color: #fff;
+    padding: 1rem 2rem;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header a {
+    align-items: center;
+    background-color: #0a331d;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #13da05, 0 0 15px #13da05 inset;
+    color: #13da05;
+    display: inline-flex;
+    height: 50px;
+    justify-content: center;
+    padding: 0 24px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    border: 2px solid #13da05;
+}
+
+header a:hover {
+    background-color: #13da05;
+    color: #001a10;
+    transform: translateY(-2px);
+}
+
+header a:active {
+    transform: translateY(2px);
+}
+
+/* ------------------ */
+/* 📄 SECCIONES        */
+/* ------------------ */
+section {
+    padding: 2rem;
+    color: #eaffea;
+}
+
+.sectionInicio {
+    scroll-margin-top: 150px;
+    background-color: #001a10;
+    border: 2px solid #13da05;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px #001a10;
+    margin: 150px;
+}
+
+.sectionInicio h1,
+.sectionInicio h2,
+.sectionInicio p {
+    text-align: center;
+}
+
+.sectionInicio h1 {
+    font-size: 4em;
+}
+
+.sectionInicio h2 {
+    font-size: 1em;
+    color: #13da05;
+}
+
+.sectionSobreMi {
+    background-color: #001a10;
+    margin: 150px 150px 2px 150px;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid #13da05;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px #001a10;
+    scroll-margin-top: 180px;
+}
+
+.tecnologiasHerramientas {
+    background-color: #001a10;
+    scroll-margin-top: 120px;
+    margin: 150px;
+    border: 2px solid #13da05;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px #001a10;
+}
+
+/* ------------------ */
+/* ✍️ FORMULARIO       */
+/* ------------------ */
+.sectionContacto {
+    width: 700px;
+    background-color: #001a10;
+    padding: 30px;
+    border-left: 5px solid #13da05;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.sectionContacto h2 {
+    color: #eaffea;
+}
+
+.sectionContacto form input,
+.sectionContacto form textarea {
+    width: 100%;
+    background-color: #002c1b;
+    border: none;
+    color: #eaffea;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.sectionContacto form input:focus,
+.sectionContacto form textarea:focus {
+    border-left: 5px solid #13da05;
+}
+
+.sectionContacto form textarea {
+    resize: none;
+    max-height: 150px;
+}
+
+.sectionContacto form button {
+    background: #13da05;
+    color: #001a10;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+}
+
+.sectionContacto form button:hover {
+    background: transparent;
+    border: 1px solid #13da05;
+    color: #13da05;
+}
+
+/* ------------------ */
+/* 🧱 LISTAS            */
+/* ------------------ */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    color: #eaffea;
+}
+
+ul li {
+    background-color: #0a331d;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+}
+
+/* ------------------ */
+/* 🦶 FOOTER           */
+/* ------------------ */
+footer {
+    background-color: #0a331d;
+    color: #eaffea;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    background-color: #0a331d;
+    color: #13da05;
+    border: 2px solid #13da05;
+    box-shadow: 0 0 8px #13da05, 0 0 15px #13da05 inset;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: #13da05;
+    color: #001a10;
+}
+
+/* ------------------ */
+/* 🧩 MEDIA QUERIES    */
+/* ------------------ */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ------------------ */
+/* 💫 TARJETAS         */
+/* ------------------ */
+.Proyecto {
+    width: 300px;
+    height: 300px;
+    background: #072d1c;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.Proyecto::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 140%;
+    background-image: linear-gradient(180deg, #13da05, #0f4c1a);
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Proyecto::after {
+    content: '';
+    position: absolute;
+    background: #072d1c;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+.Proyecto h3 {
+    color: #eaffea;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.Proyecto p {
+    z-index: 1;
+    text-align: center;
+    color: #eaffea;
+}
+
+.Proyecto img {
+    width: 290px;
+    z-index: 1;
+    border: 3px solid #13da05;
+}
+
+/* ------------------ */
+/* 🧱 CONTENEDOR TARJETAS */
+/* ------------------ */
+.contenedorProyecto {
+    background-color: #001a10;
+    border: 2px solid #13da05;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px #001a10;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionProyecto {
+    place-content: center;
+    place-items: center;
+    scroll-margin-top: 120px;
+}
+
+.sectionProyecto h2{
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    background-color: #0a331d;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #13da05, 0 0 15px #13da05 inset;
+    color: #13da05;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    padding: 0 24px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    border: 2px solid #13da05;
+    
+}
+
